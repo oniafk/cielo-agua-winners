@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página no encontrada - Agua Cielo</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      .error-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        color: #2c4787;
+      }
+
+      .error-container h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      .error-container p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .error-image {
+        max-width: 200px;
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body style="background: linear-gradient(to bottom, #ffffff, #a7d8e6)">
+    <div class="error-container">
+      <img src="/logo_cielo.webp" alt="Logo Agua Cielo" class="error-image" />
+      <h1>404 - Página no encontrada</h1>
+      <p>Lo sentimos, la página que estás buscando no existe.</p>
+      <a href="/"><button>Volver a la página principal</button></a>
+    </div>
+
+    <script>
+      // Redirect to home page after 5 seconds
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 5000);
+    </script>
+  </body>
+</html>

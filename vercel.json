@@ -1,7 +1,13 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/index", "dest": "/index.html" },
-    { "src": "/ganadores", "dest": "/ganadores.html" }
-  ]
+  "rewrites": [
+    {
+      "source": "/ganadores",
+      "destination": "/ganadores.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    }
+  ],
+  "cleanUrls": true
 }
